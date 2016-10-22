@@ -17,19 +17,8 @@ Map<String, String> coolies_map = new HashMap<String, String>();
 
 // org.jsoup.Connection
 Connection conn = Jsoup.connect(url);
-conn.header("Connection", "keep-alive");
-try {
-  URL _url = new URL(url);
-  conn.header("Host", _url.getHost());
-} catch (MalformedURLException e) {
-  throw Lang.wrapThrow(e);
-}
-conn.header("User-Agent", "Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0");
-conn.header("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
-conn.header("Accept-Language", "en-US,zh-CN;q=0.8,zh;q=0.5,en;q=0.3");
-conn.header("Accept-Encoding", "gzip, deflate");
-conn.header("Cache-Control", "max-age=0");
-conn.timeout(WaitTime.Longer.valInMS());
+conn.header(""User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0"");
+... ...
 
 conn.cookies(coolies_map);
 Document doc = conn.post();
