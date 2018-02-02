@@ -25,6 +25,8 @@ Document doc = conn.post();
 
 4. Jsoup获取网页中的链接
 http://blog.csdn.net/yangfeisc/article/details/44175685
+http://blog.csdn.net/withiter/article/details/15339579
+http://blog.csdn.net/ws_0815/article/details/78975046
 
 官网文档：
 
