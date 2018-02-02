@@ -23,6 +23,9 @@ conn.header(""User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/2
 conn.cookies(coolies_map);
 Document doc = conn.post();
 
+4. Jsoup获取网页中的链接
+http://blog.csdn.net/yangfeisc/article/details/44175685
+
 官网文档：
 
 https://jsoup.org/apidocs/org/jsoup/select/Selector.html
